@@ -58,7 +58,7 @@ namespace Umbraco.Web.HealthCheck.Checks.SEO
                         var protocol = HttpContext.Current.Request.IsSecureConnection ? "https://" : "http://";
                         var client = new WebClient();
                         var content = client.DownloadString("https://ampbench.appspot.com/raw?url=" + protocol + domain + "/" + pageURL + "?amp=1");
-                        if (content.Contains("pass"))
+                        if (content.Contains("FAIL"))
                         {
                             success = false;
                             message += "AMP validation failed for page: " + pageURL;
