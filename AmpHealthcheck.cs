@@ -9,7 +9,7 @@ using Umbraco.Core.Services;
 
 namespace Umbraco.Web.HealthCheck.Checks.SEO
 {
-    [HealthCheck("3A482719-3D90-4BC1-B9F8-910CD9CF5B32", "AmpValidation",
+    [HealthCheck("17e136d8-10f5-4a85-825c-dcae2a9b4068", "AmpValidation",
     Description = "Check AMP validation on pages",
     Group = "SEO")]
     public class AmpHealthcheck : HealthCheck
